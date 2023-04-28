@@ -1,24 +1,171 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProjectExample - Home</title>
-    <link rel="stylesheet" href="/app.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>INDONESIA CAR AREA NETWORK RESERVASI</title>
+    <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    <div style="text-align: center">
-      <h1>Hello World!</h1>
-      <h2>Hello World!</h2>
-      <h3>Hello World!</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eveniet
-        pariatur suscipit laboriosam nam adipisci earum eaque iure officiis rem
-        architecto sapiente enim error, reiciendis, incidunt unde recusandae.
-        Tempora, cum!
+    <form action="" class="web2wa">
+      <img src="logo.png" class="imgLogo" />
+
+      <h1 class="web2wa__titulo">INDONESIA CAR AREA NETWORK</h1>
+      <p class="web2wa__parrafo">Berpengalaman & Terpercaya </br> Kami hadir di kota - kota di Indonesia
+        </p>
+      <p class="web2wa__parrafo">
+        Silahkan isi form dibawah ini dengan lengkap!
       </p>
-    </div>
-    <script src="/app.js"></script>
+
+      <!--
+      <label for="klien" class="web2wa__label">Input Your name</label>
+      <input
+        id="klien"
+        type="text"
+        class="web2wa__input"
+        placeholder="Please fill your full name here*"
+      />
+      -->
+
+      <label for="location" class="web2wa__label">Lokasi Penjemputan</label>
+      <select id="locationselectio" name="listalocationselectio" class="web2wa__input">
+        <option>Medan / Kuala Namu Airport</option>
+        <option>Banda Aceh / Iskandar Muda Airport</option>
+        <option>Padang / Minangkabau Airport </option>
+        <option>Palembang / Sultan M. Badaruddin Airport </option>
+        <option>Pekanbaru / Sultan Syarif Kasim Airport</option>
+        <option>Jambi / Sultan Thaha Saifuddin Airport</option>
+        <option>Bengkulu / Fatmawati Soekarno Airport</option>
+        <option>Lubuk Linggau / Silampari Airport</option>
+        <option>Batam / Hang Nadim Airport</option>
+        <option>Bangka Belitung / Depati Amir Airport</option>
+        <option>Lampung / Radin Inten Airport</option>
+        <option>Jakarta / Soekarno - Hatta Airport</option>
+        <option>Serang / Cilegon / Banten</option>
+        <option>Bogor</option>
+        <option>Bandung / Husein Sastranegara Airport</option>
+        <option>Cirebon / Cakrabhuwana Airport</option>
+        <option>Semarang / Ahmad Yani Airport</option>
+        <option>Yogyakarta / Adisutjipto Airport</option>
+        <option>Solo / Adi Soemarmo Airport</option>
+        <option>Malang / Abdulrachman Saleh Airport</option>
+        <option>Majalengka / Kertajati Airport</option>
+        <option>Surabaya / Juanda Airport</option>
+        <option>Banyuwangi</option>
+        <option>Denpasar / Bali / Ngurah Rai Airport</option>
+        <option>Kupang / El Tari Airport</option>
+        <option>Lombok / Lombok Airport</option>
+        <option>Pontianak / Supadio Airport</option>
+        <option>Samarinda / Aji Pangeran Airport</option>
+        <option>Balikpapan - Sepinggan Airport</option>
+        <option>Banjarmasin / Syamsudin Noor Airport</option>
+        <option>Palangkaraya / Tjilik Riwut Airport</option>
+        <option>Gorontalo / Djalaluddin Airport</option>
+        <option>Mamuju / Tampa Padang Airport</option>
+        <option>Palu / Mutiara Palu Airport</option>
+        <option>Manado / Sam Ratulangi Airport</option>
+        <option>Kendari / Haluoleo Airport</option>
+        <option>Makassar / Ujung Pandang - Sultan Hasanuddin Airport</option>
+        <option>Ternate / Sultan Babullah Airport</option>
+        <option>Ambon / Pattimura Airport</option>
+        <option>Manokwari / Rendani Airport</option>
+        <option>Jayapura / Sentani Airport</option>
+        </select>
+
+      <label for="tanggal" class="web2wa__label">Tanggal</label>
+      <input
+        id="tanggal"
+        type="date"
+        class="web2wa__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="jam" class="web2wa__label"
+        >Jam</label
+      >
+      <input id="jam" type="time" class="web2wa__input" />
+
+      <label for="daysnum" class="web2wa__label">Lama Pemakaian</label>
+      <input
+        id="daysnum"
+        type="number"
+        class="web2wa__input"
+        pattern="[0-9]{2}"
+      />
+
+
+      <label for="pelayan" class="web2wa__label"
+        >Termasuk Supir?</label
+      >
+      <select id="pelayan" name="listapelayans" class="web2wa__input">
+        <option>Ya, Pakai Supir</option>
+        <option>Tidak, Lepas Kunci Saja</option>
+        <option>Hanya Dropoff Saja</option>
+      </select>
+
+      <label for="layanan" class="web2wa__label"
+        >Silahkan pilih mobil dibawah ini</label
+      >
+      <select id="layanan" name="Car" class="web2wa__input">
+        <option>Toyota Agya (AT) </option>
+        <option>Daihatsu Sigra (AT / MT ) </option>
+        <option>Honda Brio (AT / MT) </option>
+        <option>Honda Jazz (AT) </option>
+        <option>Toyota Yaris (AT) </option>
+        <option>Suzuki Balleno (AT)</option>
+        <option>Honda Mobilio (AT) </option>
+        <option>Toyota Raize (AT)</option>
+        <option>Honda HRV (AT) </option>
+        <option>Toyota New Avanza (AT / MT) </option>
+        <option>Suzuki New Ertiga (AT) </option>
+        <option>Toyota Avanza FWD (AT) </option>
+        <option>Mitsubishi Xpander (AT) </option>
+        <option>Nissan New Livina </option>
+        <option>New VELOZ (AT) </option>
+        <option>Honda BRV (AT) </option>
+        <option>Toyota All New Rush (AT) </option>
+        <option>Toyota Innova Reborn (AT / MT) </option>
+        <option>Honda CRV (AT) </option>
+        <option>Nissan X-Trail (AT) </option>
+        <option>Toyota Fortuner (AT) </option>
+        <option>Mitsubishi Pajero Dakar (AT) </option>
+        <option>Mitsubishi Triton Exceed 4x4 (MT) </option>
+        <option>Toyota Alphard Transformer (AT) </option>
+        <option>Hiace Commuter (MT) 14 seat </option>
+        <option>Hiace Premio 11 seat (MT) </option>
+        <option>Isuzu Elf 19 seat (MT) </option>
+      </select>
+
+      <label for="droplocation" class="web2wa__label">Tujuan Destinasi</label>
+      <input
+        id="droplocationselectio"
+        type="text"
+        class="web2wa__input"
+        placeholder="Silahkan masukkan tujuan destinasi*"
+      />
+
+      <div id="tanggapan"></div>
+
+      
+      <p class="socmed">
+        <a href="https://instagram.com/icanrentacar" target="_blank"><img src="instagram.png" class="imgsocmed" /></a>
+        &nbsp;&nbsp;
+        <a href="https://icanrentacar.com" target="_blank"><img src="website.png" class="imgsocmed" /></a>
+        &nbsp;&nbsp;
+        <a href="https://web.facebook.com/icanrentacar.icanrentacar" target="_blank"><img src="facebook.png" class="imgsocmed" /></a>
+      </p>
+
+      <button id="submit" class="web2wa__submit">Kirim Reservasi!</button>
+      
+      <div class="choolang"><p style="color: rgb(197, 197, 197);">(c) icanrentacar 2022</p></div>
+
+    </form>
+    <p>&nbsp;</p>
+    <script src="js/form.js"></script>
   </body>
 </html>
